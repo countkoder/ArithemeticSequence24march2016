@@ -1,9 +1,6 @@
 import java.util.Scanner;
 public class ArithemeticSequence24march2016 {
-// version 1: add numbers from 1 to 20.
-// version 2: let the user enter the numbers instead of hardcoded 1 and 20.
-// version 3: let the user choose the difference instead of diff=1.
-// version 4: calculate sum using math formula and compare with sum using loop. 
+// version 5: list the first 5 elements.
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("-------Arithemetic Sequence-------\n");
@@ -14,9 +11,11 @@ public class ArithemeticSequence24march2016 {
         System.out.println("Enter the number of elements:");
         int n = scan.nextInt();
         double an = a1;
-        double sumLoop = a1;        
+        double sumLoop = a1;   
+        System.out.println("a" + "(" + 1 + ") " + " = " + a1);
         for(int i=2; i<=n; i++) {
              an += d;
+             if(i<6) System.out.println("a" + "(" + i +") " + " = " + an);
              sumLoop += an;
         }
         System.out.println("Sum using for loop = " + sumLoop);

@@ -1,15 +1,10 @@
-import java.util.Scanner;
 public class ArithemeticSequence24march2016 {
-// version 5: list the first 5 elements.
+// version 6: implament using input parameters.
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("-------Arithemetic Sequence-------\n");
-        System.out.println("Enter the first element:");
-        double a1 = scan.nextDouble();
-        System.out.println("Enter the difference:");
-        double d = scan.nextDouble();
-        System.out.println("Enter the number of elements:");
-        int n = scan.nextInt();
+        System.out.println("-------Arithemetic Sequence-------");
+        double a1 = Double.parseDouble(args[0]);
+        double d = Double.parseDouble(args[1]);
+        double n = Double.parseDouble(args[2]);
         double an = a1;
         double sumLoop = a1;   
         System.out.println("a" + "(" + 1 + ") " + " = " + a1);

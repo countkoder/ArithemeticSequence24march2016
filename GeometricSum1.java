@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class GeometricSum1 {
     public static void main(String[] args){
-        //version 2.compare the loop result and the formula result
+        //version 2.comparing the results of the loop and the formula
         System.out.println("-------Geometric sequence-------");
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the first element:");
@@ -20,5 +20,7 @@ class GeometricSum1 {
         }
         System.out.println("Using math foumula: sum(" + n + ") = " + sumFormula);
         System.out.println("Using loop:         sum(" + n + ") = " + sum);
+        if(sumFormula != sum) System.out.println("INCORRECT");
+        else System.out.println("GOOD WORK");
     }
 }

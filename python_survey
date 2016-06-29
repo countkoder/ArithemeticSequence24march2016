@@ -1,0 +1,19 @@
+#survey
+print("You will now be given a survey")
+print("Choose one of the options in each list")
+food_list = ["apple", "oranges", "bananas"]
+print("Food list")
+choice1 = input(food_list)
+
+car_list = ["honda", "suburu", "porche", "ferrari"]
+print("car list")
+choice2 = input(car_list)
+
+game_list = ["asassins creed", "black ops 2", "gta5"]
+print("Game list")
+choice3 = input(game_list)
+
+print("your order is the following...")
+print(choice1)
+print(choice2)
+print(choice3)

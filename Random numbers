@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<title>Title of MyPage </title>	
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+    </head>
+    <body>
+		<br/>
+		<div class="container">
+			<h2>Solve Math Problems with JS</h2>
+			<h3>Ptroject 1</h3>
+			min<input type="text" id="min" value="0"/>&nbsp;&nbsp;
+			max<input type="text" id="max" value="0"/>
+			<input type="submit" id="mySubmitButton" value="Go"/> <br/><br/>
+            <div id="myScreenSection" ></div>
+        </div>
+		<script type=text/javascript>
+           "use strict";
+            $(document).ready(function () {
+                $('#mySubmitButton').click(function () {
+                	var min = parseFloat($('#min').val());	
+                	var max = parseFloat($('#max').val());
+                	var x=Math.floor(Math.random() * (max - min + 1)) + min
+                    $('#myScreenSection').html(x);
+                });
+            });
+        </script>
+		&nbsp;- - - <i>End of the page</i> - - -
+    </body>
+</html>
